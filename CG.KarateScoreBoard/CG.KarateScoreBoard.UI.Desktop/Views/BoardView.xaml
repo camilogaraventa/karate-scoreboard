@@ -1,0 +1,102 @@
+﻿<UserControl x:Class="CG.KarateScoreBoard.UI.Desktop.Views.BoardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CG.KarateScoreBoard.UI.Desktop.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="600">  
+    <Grid Background="{StaticResource ResourceKey=boardBackground}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="0" Grid.RowSpan="5" Background="Red"></Border>
+        <Border Grid.Column="4" Grid.RowSpan="5" Background="Blue"></Border>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal">
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal">
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="2" Orientation="Horizontal">
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="3" Orientation="Horizontal">
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+            <Viewbox>
+                <Rectangle Stroke="{StaticResource ResourceKey=boardForeground}" StrokeThickness="1" Width="20" Height="20" Margin="10 2 10 2" Fill="YellowGreen" />
+            </Viewbox>
+        </StackPanel>
+
+        <Viewbox Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3">
+            <TextBlock Text="02:25:22" Style="{StaticResource ResourceKey=boardText}" />
+        </Viewbox>
+
+        <Viewbox Grid.Column="1" Grid.Row="1">
+            <TextBlock Text="5" Style="{StaticResource ResourceKey=boardText}" TextAlignment="Center" />
+        </Viewbox>
+        
+        <Viewbox Grid.Column="3" Grid.Row="1">
+            <TextBlock Text="4" Style="{StaticResource ResourceKey=boardText}" TextAlignment="Center"  />
+        </Viewbox>
+
+        <Viewbox Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3">
+            <TextBlock Text="00:00:00" Style="{StaticResource ResourceKey=boardText}" />
+        </Viewbox>
+
+    </Grid>
+</UserControl>
